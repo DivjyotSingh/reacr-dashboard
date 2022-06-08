@@ -22,8 +22,9 @@ import ColorMapping from "./pages/Charts/ColorMapping";
 import Pyramid from "./pages/Charts/Pyramid";
 import Stacked from "./components/Charts/Stacked";
 import Financial from "./pages/Charts/Financial";
+import { useStateContext } from "./contexts/ContextProvider";
 const App = () => {
-  const activeMenu = true;
+  const { activeMenu } = useStateContext();
   return (
     <div>
       <BrowserRouter>
